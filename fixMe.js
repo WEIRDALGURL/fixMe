@@ -27,6 +27,8 @@ var adventuringParty = {
 }
 
 // MAKE CHANGES AFTER THIS
+var wizard = adventuringParty.wizard;
+var warrior = adventuringParty.warrior;
 
 // This function lists all characters in the party
 function listCharacters() {
@@ -38,9 +40,9 @@ function listCharacters() {
 
 // This function should list all weapons for the character
 function listWeapons(character) {
-    console.log("Listing weapons for " + adventuringParty.character + ":");
-    for(i in character.weapons) {
-        var weapon = adventuringParty.character.weapons[i];
+    console.log("Listing weapons for " + character.name + ":");
+   // for(i in character.weapons) {
+        var weapon = character.weapons;
         console.log(" * " + weapon);
     }
 }
